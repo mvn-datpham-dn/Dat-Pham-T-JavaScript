@@ -19,9 +19,9 @@ console.log("let khi khai báo biến có thể thay đổi giá trị biến, c
 //   "want to buy " + card.amount + " " + card.product + " for\n" +
 //   "a total of " + (card.amount * card.unitprice) + " bucks?";
 //   ```
-var user = { name: 'David' };
-var card = { amount: 7, product: "Bar", unitprice: 42 };
-var message = `Hello ${user.name},
+let user = { name: 'David' };
+let card = { amount: 7, product: "Bar", unitprice: 42 };
+let message = `Hello ${user.name},
 want to buy ${card.amount} ${card.product} for
 a total of ${card.amount * card.unitprice} bucks?`;
 console.log(message);
