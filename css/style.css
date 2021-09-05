@@ -18,7 +18,7 @@ a img {
     vertical-align: top;
 }
 .container {
-    max-width: 1280px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 35px;
 }
@@ -71,6 +71,9 @@ button {
     padding: 0;
     display: inline-block;
 }
+.cart-add i:hover {
+    color:darkslategray;
+}
 .cart-add span {
     display: inline-block;
     line-height: 25px;
@@ -103,7 +106,36 @@ button {
 }
 .product-name {
     margin: 10px 0px;
+    font-size: 25px;
 }
+.img-hover-zoom {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.img-hover-zoom img {
+    transition: transform 2s ease;
+}
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+.btn-primary {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.product-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-primary:hover {
+    color:blue;
+    background-color:antiquewhite;
+}
+
 /* Footer */
 .page-footer {
     margin-top: 50px;

@@ -14,7 +14,7 @@
         <div class="header container">
             <div class="header-left"></div>
             <div class="header-middle">
-                <a href="#" class="header-logo">
+                <a href="product.html" class="header-logo">
                     <img src="../img/logo.jpg" alt="logo">
                 </a>
             </div>
@@ -26,18 +26,18 @@
             <div class="container">
                 <h2 class="section-title">Cart</h2>
                 <table class="cart-list">
-                    <tr>
-                      <th>#</th>
-                      <th>Product</th>
-                      <th>Quality</th>
-                      <th>Action</th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Maria Anders</td>
-                      <td>Germany</td>
-                      <td><a href="#"><i><i class="fas fa-trash-alt"></i></i></a></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product</th>
+                            <th>Quality</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list-cart">
+                        
+                    </tbody>
                   </table>
             </div>
         </section>
@@ -45,5 +45,7 @@
     <footer class="page-footer">
         <p>Phạm Thành Đạt - Monstar-lab @2021</p>
     </footer>
+    <script src="../js/index.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 </html>

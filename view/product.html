@@ -7,7 +7,6 @@
     <title>Product</title>
     <script src="https://kit.fontawesome.com/ccd4eab307.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/product.js"></script>
 </head>
 <body>
     <header class="page-header">
@@ -19,9 +18,9 @@
                 </a>
             </div>
             <div class="header-right">
-                    <a href="#" class="cart-add">
+                    <a href="cart.html" class="cart-add">
                         <i class="fas fa-cart-plus"></i>
-                        <span class="count-products">1</span>
+                        <span class="count-products" id="cart-total">0</span>
                     </a>
             </div>
         </div>     
@@ -30,77 +29,7 @@
         <section class="products">
             <div class="container">
                 <h2 class="section-title">New Products</h2>
-                <ul class="product-list">
-                    <li class="product-item col-3">
-                        <a href="#">
-                            <img src="../img/products.jpg" alt="ảnh product">
-                        </a>
-                        <h3 class="product-name">Product Name</h3>
-                        <button>Add Cart</button>
-                    </li>
-                    <li class="product-item col-3">
-                        <a href="#">
-                            <img src="../img/products.jpg" alt="ảnh product">
-                        </a>
-                        <div class="product-content">
-                            <h3 class="product-name">Product Name</h3>
-                            <button>Add Cart</button>
-                        </div>
-                    </li>
-                    <li class="product-item col-3">
-                        <a href="#">
-                            <img src="../img/products.jpg" alt="ảnh product">
-                        </a>
-                        <div class="product-content">
-                            <h3 class="product-name">Product Name</h3>
-                            <button>Add Cart</button>
-                        </div>
-                    </li>
-                    <li class="product-item col-3">
-                        <a href="#">
-                            <img src="../img/products.jpg" alt="ảnh product">
-                        </a>
-                        <div class="product-content">
-                            <h3 class="product-name">Product Name</h3>
-                            <button>Add Cart</button>
-                        </div>
-                    </li>
-                    <li class="product-item col-3">
-                        <a href="#">
-                            <img src="../img/products.jpg" alt="ảnh product">
-                        </a>
-                        <div class="product-content">
-                            <h3 class="product-name">Product Name</h3>
-                            <button>Add Cart</button>
-                        </div>
-                    </li>
-                    <li class="product-item col-3">
-                        <a href="#">
-                            <img src="../img/products.jpg" alt="ảnh product">
-                        </a>
-                        <div class="product-content">
-                            <h3 class="product-name">Product Name</h3>
-                            <button>Add Cart</button>
-                        </div>
-                    </li>
-                    <li class="product-item col-3">
-                        <a href="#">
-                            <img src="../img/products.jpg" alt="ảnh product">
-                        </a>
-                        <div class="product-content">
-                            <h3 class="product-name">Product Name</h3>
-                            <button>Add Cart</button>
-                        </div>
-                    </li>
-                    <li class="product-item col-3">
-                        <a href="#">
-                            <img src="../img/products.jpg" alt="ảnh product">
-                        </a>
-                        <div class="product-content">
-                            <h3 class="product-name">Product Name</h3>
-                            <button>Add Cart</button>
-                        </div>
-                    </li>
+                <ul class="product-list" id="list-product">
                 </ul>
             </div>
         </section>
@@ -108,5 +37,7 @@
     <footer class="page-footer">
         <p>Phạm Thành Đạt - Monstar-lab @2021</p>
     </footer>
+    <script src="../js/index.js"></script>
+    <script src="../js/product.js"></script>
 </body>
 </html>
