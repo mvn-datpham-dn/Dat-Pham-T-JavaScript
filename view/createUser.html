@@ -115,13 +115,14 @@
         <div class="container">
           <div class="content-header">
             <h1 class=""main-title">Create User</h1>
+            <div id="notification"></div>
           </div>
-          <form name="create-user" method="post"  onsubmit="return createUser()"> 
+          <form name="create-user" method="post"  onsubmit="return createUser(event);"> 
             <div class="row mb-4">
               <div class="col-9">
                 <div class="form-outline">
                   <input type="text" id="form3Example1" class="form-control" name="name" placeholder="Full name"/>
-                  <label class="form-label" for="form3Example1">Name</label>
+                  <label class="form-label" for="form3Example1">Name </label>
                 </div>
               </div>
               <div class="col-3">

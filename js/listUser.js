@@ -4,7 +4,7 @@ $(document).ready(function () {
     "language": {
       "sProcessing": "Đang xử lý...",
       "sLengthMenu": " _MENU_ ",
-      "sZeroRecords": "Không tìm thấy dòng nào phù hợp",
+      "sZeroRecords": "Không tìm thấy user nào",
       "sInfo": "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
       "sInfoEmpty": "Đang xem 0 đến 0 trong tổng số 0 mục",
       "sInfoFiltered": "(được lọc từ _MAX_ mục)",
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 const usersElement = document.getElementById("user-list");
 const renderUser = () => {
-  const users = JSON.parse(localStorage.getItem(USER_KEY)) ?? [{id: 1, name: "", email: "Do not have user", password: "", phone: "", address: "", role: "1"}]
+  const users = JSON.parse(localStorage.getItem(USER_KEY)) ?? [{ id: 1, name: "", email: "Do not have user", password: "", phone: "", address: "", role: "1" }]
   const userItems = users.map(u => `
     <tr>
       <td>${u.id}</td>
@@ -38,7 +38,7 @@ const renderUser = () => {
         <a href="./editUser.html?id=${u.id}">
           <i class="fas fa-user-edit"></i>
         </a>
-        <a href="">
+        <a href=""  onclick="deleteUser(${u.id}, event)">
           <i class="far fa-trash-alt"></i>
         </a>
       </td>
@@ -47,4 +47,17 @@ const renderUser = () => {
   usersElement.innerHTML = userItems.join('')
 }
 renderUser()
-console.log(USER_KEY)
+
+
+function deleteUser(id, event) {
+  event.preventDefault()
+  const users = JSON.parse(localStorage.getItem(USER_KEY)) ?? []
+  if (confirm('User sẽ bị xóa ? ')) {
+    const deleteUser = users.filter(user => user.id != id )
+    localStorage.setItem(USER_KEY, JSON.stringify(deleteUser));
+  }
+  renderUser()
+  const notiEle = document.getElementById('notification')
+  const noti = ["<span>Delete User Complete"]
+  notiEle.innerHTML = noti.join('')
+}

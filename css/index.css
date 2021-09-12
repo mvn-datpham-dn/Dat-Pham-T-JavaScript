@@ -263,7 +263,6 @@ body {
     padding: 0;
 }
 .content-header {
-    line-height: 70px;
     vertical-align: center;
 }
 .main-title {
@@ -293,4 +292,10 @@ body {
 }
 .main-body {
   padding-top: 15px;
+}
+#notification {
+  font-size: 20px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  color: #35dc5f;
 }
