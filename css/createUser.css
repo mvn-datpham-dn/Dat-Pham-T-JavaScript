@@ -1,0 +1,13 @@
+.content-header {
+  text-align: center;
+}
+.main-title {
+  display: block;
+}
+.select {
+  border: 1px solid #ced4da;
+  color: #495057;
+  background-color: #fff;
+  border-radius: .25rem;
+  font-size: 1.2rem;
+}
